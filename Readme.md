@@ -86,4 +86,3 @@ Sí, existe un comando: `docker stats`. Este te indicará el porcentaje de **RAM
 | dam_ubu1  | 0.00% | 42.23MiB / 7.667GiB |
 ```
 
-Este código Markdown resalta los títulos en azul y muestra la respuesta a la última pregunta en forma de tabla. Asegúrate de que tu entorno de visualización de Markdown admita la representación de colores y tablas para que se vea correctamente.
