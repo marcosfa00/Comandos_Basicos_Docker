@@ -17,19 +17,23 @@ esto?.
 
 
 
-
+Descarga la imagen 'ubuntu y comprueba que está en tu equipo
+---
 Para Descargar la imagen de Ubuntu debemos de indicar que vamos a usar Ubuntu en el siguiente comando:
 sudo docker run -it ubuntu bash
 
 
 
 Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre
+---
 Ahora desde otra Ventana del terminal, comprobaremos el nombre de Docker con el comando
 **Docker ps**
 
 
 
-3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?
+Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?
+---
+
 Ahora debemos crear un contenedor con el nombre ‘dam_ubu1’ y como queremos que tenga Ubuntu dentro, indicamos esto mismo en el comando
 **docker run --name dam_ubu1 -it ubuntu**
 
@@ -43,6 +47,7 @@ Pero ojo en este caso no queremos acceder a el directamente, asiq lo vamos a cre
 
 
  Comprueba que ip tiene y si puedes hacer un ping a google.com
+ ---
 No podemos hacerle ping a google.com puesto que no tenemos las net_tools instaladas
 bash: ping: command not found
 Asique las instalamos con apt update, apt intsall net-tools **El comando ping se instala con el paquete iputils-ping**
@@ -73,16 +78,19 @@ Instalamos **iputils-ping** para intentar hacer ping entre contenedores también
 **EURECA!! Funciona**
 
 Sal del terminal, ¿que ocurrió con el contenedor?
+---
 Bien ahora salgamos del contenedor; Al hacer esto puede parecer que se borra, y si no tiene nombre no vamos a poder entrar tan fácil, pero desde la terminal podemos hacer el comando **Docker ps -a** Esto nos muestra todos los contenedores, no solo los que están abiertos y estemos usando, si no todos aquellos de los cuales hemos salido anteriormente, con su respectivo nombre, que se lo podemos haber dado nosotros o se selecciona aleatoriamente
 
 
 ¿Cuanta memoria en el disco duro ocupaste?
+---
 Con el comando **docker system df** nos muestra que espacio esta usando en nuestro equipo
 
     En este caso por ejemplo los contenedores estan usando **127M**
 
 
 ¿Cuanta **RAM** ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
+---
 Si existe un comando: **docker stats**, Este te indicará el porcentaje de **ram** que están usando los contenedores Abiertos :
 En este caso
 
