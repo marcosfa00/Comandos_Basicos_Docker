@@ -85,4 +85,3 @@ Sí, existe un comando: `docker stats`. Este te indicará el porcentaje de **RAM
 | dam_ubu2  | 0.00% | 42.23MiB / 7.667GiB |
 | dam_ubu1  | 0.00% | 42.23MiB / 7.667GiB |
 ```
-
